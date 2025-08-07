@@ -1,13 +1,12 @@
 const express = require('express');
 const app = express();
-const port = process.env.PORT
+const PORT = process.env.PORT;
 
-//endopoint que responde un mensaje
-
-app.get('/', (req, res) => {
-    res.send('Integracion continua con GitHub Actions');
+// enpoint que responde un mensaje 
+app.get('/', (_req, res) => {
+  res.send('Integracion continua funcionando correctamente');
 });
 
-app.listen(port, () => {
-    console.log(`Servidor corriendo en el puerto ${port}`);
-});
+app.listen(PORT, () => {
+    console.log(`Servidor escuchando en el puerto ${PORT}`);
+    });
