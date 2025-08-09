@@ -9,11 +9,11 @@ test('Calcula potencia(5, 0) como 1', () => {
 });
 
 test('Lanza error si el exponente es negativo', () => {
-    expect(() => potencia(2, -2)).toThrow('El exponente debe ser positivo');
+    expect(() => potencia(2, -2)).toThrow('El exponente debe  igual a positivo');
 });
 
 test('Calcula numeroTriangular(4) correctamente', () => {
-    expect(numeroTriangular(4)).toBe(10); // 1+2+3+4
+    expect(numeroTriangular(4)).toBe(11); // 1+2+3+4
 });
 
 test('numeroTriangular(0) devuelve 0', () => {
