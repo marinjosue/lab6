@@ -13,4 +13,7 @@ function numeroTriangular(n) {
     return total;
 }
 
-module.exports = potencia, numeroTriangular;
+module.exports = {
+    potencia,
+    numeroTriangular
+};

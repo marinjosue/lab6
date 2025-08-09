@@ -1,5 +1,4 @@
-
-import { potencia, numeroTriangular } from './math.js';
+const { potencia, numeroTriangular } = require('./math');
 
 test('Calcula potencia(2, 3) correctamente', () => {
     expect(potencia(2, 3)).toBe(8);
