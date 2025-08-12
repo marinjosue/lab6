@@ -3,12 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Despliegue contunuo</title>
+    <title>Veneno Mortal</title>
+    <style>
+        body {
+            background: linear-gradient(135deg, #0a0a0a, #1a4d1a);
+            color: #00ff41;
+            font-family: 'Courier New', monospace;
+            margin: 0;
+            padding: 20px;
+            min-height: 100vh;
+        }
+        h1 {
+            text-align: center;
+            font-size: 3em;
+            text-shadow: 0 0 20px #00ff41;
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: rgba(0, 20, 0, 0.8);
+            padding: 30px;
+            border-radius: 10px;
+            border: 2px solid #00ff41;
+            box-shadow: 0 0 30px rgba(0, 255, 65, 0.3);
+        }
+        .warning {
+            background: #ff0040;
+            color: white;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+            text-align: center;
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
-    <h1>!Sitio Estatico</h1>
-    <p id="out"></p>
+    <div class="container">
+        <h1>☠️ VENENO DIGITAL ☠️</h1>
+        <div class="warning">
+            ⚠️ PELIGRO: CONTENIDO TÓXICO ⚠️
+        </div>
+        <p id="out">Bienvenido al laboratorio de venenos digitales...</p>
+        <p>🐍 Serpiente venenosa detectada en el sistema</p>
+        <p>🕷️ Arañas tóxicas navegando por el código</p>
+        <p>☢️ Radiación letal en los datos</p>
+    </div>
     <script src="app.js"></script>
-
 </body>
 </html>
